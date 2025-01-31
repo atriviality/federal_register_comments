@@ -2,6 +2,11 @@
 
 This is a proof of concept that leverages the Federal Register API to consolidate comments for notices of proposed rule making (NPRM). The code does a second pass on the PDF that is created to add bookmarks as well as limited analysis of the text, i.e., a word cloud. 
 
+## Limitations
+
+ - The prototype does not handle attachments that are not PDF. 
+ - There can be edge cases where unsupported characters (non Latin-1 characters) cause the prototype to fail.
+
 ## Usage
 
 The document_id can be found under the Document ID box for a proposed rule. An API key for the Federal Register API can be obtained at (https://open.gsa.gov/api/regulationsgov/)[https://open.gsa.gov/api/regulationsgov/].
