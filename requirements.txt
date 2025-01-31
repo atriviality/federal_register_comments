@@ -1,0 +1,6 @@
+beautifulsoup4==4.12.3
+fpdf==1.7.2
+pdfrw==0.4
+pypdf==5.1.0
+Requests==2.32.3
+wordcloud==1.9.3
