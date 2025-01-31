@@ -108,7 +108,7 @@ def merge_comments(comments, _id, key):
             x.set_font('Arial', size=12)
             soup = BeautifulSoup(comments[f]["text"], 'html.parser')
             text = unescape(soup.get_text())
-            x.multi_cell(0, 15, text.encode("latin-1", "ignore").decode())
+            x.multi_cell(0, 15, text.encode("latin-1", "ignore").decode(errors="ignore"))
             comments[f]["file"] = f'/tmp/{str(uuid.uuid4())}.pdf'
             x.output(name = comments[f]["file"], dest='F')
             reader = PdfReader(comments[f]["file"])
