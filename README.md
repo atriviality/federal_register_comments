@@ -9,7 +9,9 @@ This is a proof of concept that leverages the Federal Register API to consolidat
 
 ## Usage
 
-The document_id can be found under the Document ID box for a proposed rule. An API key for the Federal Register API can be obtained at (https://open.gsa.gov/api/regulationsgov/)[https://open.gsa.gov/api/regulationsgov/].
+The document_id can be found under the Document ID box for a proposed rule; it also seems to correspond with the link to the page on regulations.gov, i.e., https://www.regulations.gov/document/*<document_id>*. 
+
+An API key for the Federal Register API can be obtained at (https://open.gsa.gov/api/regulationsgov/)[https://open.gsa.gov/api/regulationsgov/].
 
 ```
 usage: retrieve_regulation_comments [-h] [--post-process] [--no-verify] document_id api_key
